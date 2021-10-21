@@ -6,14 +6,14 @@ const theme = createTheme();
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <AppBar position = "relative">
+      {/* <AppBar position = "relative">
         <Toolbar>
           <ImageSearchIcon sx={{mr:1}} />
           <Typography variant="h6" color="inherit" noWrap>
             Rarity Tool
           </Typography>
         </Toolbar>
-      </AppBar>
+      </AppBar> */}
       <main>
         <Box>
           <Container maxWidth="md">
