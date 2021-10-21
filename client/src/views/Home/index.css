@@ -1,0 +1,79 @@
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.nft-id
+{
+  position:absolute;
+  left:20px;
+  top:20px;
+  font-size: 2rem;
+  color:black;
+  font-family: cursive;
+}
+
+.nft-rank
+{
+  position:absolute;
+  right:20px;
+  top:20px;
+  font-size: 2rem;
+  color:black;
+  font-family: cursive;
+
+}
+
+.nft-name
+{
+  position:absolute;
+  right:20px;
+  bottom:20px;
+  font-size: 2rem;
+  color:white;
+
+}
+
+.attr-container{
+  position: relative;
+  background: linear-gradient(to right, #feffff 0%,#a0d8ef 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+.attr-pane{
+  position: relative;
+  padding: 20px 20px 20px 40px;
+}
+
+.attr-back-img {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  opacity: 70%;
+}
+
+.left-part{
+  background:-webkit-linear-gradient(left, #a0dd2e 15%,#e3f5ab 49%,#f8ffe8 100%,#f8ffe8 100%); /* Chrome10-25,Safari5.1-6 */
+}
+input {
+  border: 2px solid #ccc;
+  border-radius:4px;
+  font-size:14px;
+  padding:8px;
+  font-family: monospace;
+  font-weight: bold;
+  color:#444;
+}
+
+.rank-id{
+  text-align: center;
+  font-family: "monospace"!important;
+  font-weight: bold!important;
+  font-size:16px!important;
+  font-style:italic!important;
+  color: darkgreen!important;
+}
