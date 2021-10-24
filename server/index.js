@@ -1,6 +1,7 @@
 const express = require("express");
 const fs = require("fs");
 const axios = require("axios");
+const path = require("path");
 const getMarketInfo = async () => {
   let ret = [];
   let market_data = await axios.get(
@@ -20,6 +21,8 @@ const getMarketInfo = async () => {
 (async () => {
   const PORT = process.emit.PORT || 3001;
   const app = express();
+  app.use(express.static(path.join(__dirname, '../client/build')));
+
   app.use(express.urlencoded());
   app.use(express.json());
 
@@ -69,6 +72,9 @@ const getMarketInfo = async () => {
     } catch (error) {}
     return item;
   };
+  app.get('/*', (req, res) => {
+    res.sendFile(path.join(__dirname, '../client/build', 'index.html'));
+  });
   app.post("/token_by_id", (req, res) => {
     let id = req.body.id;
     let ret = {};
