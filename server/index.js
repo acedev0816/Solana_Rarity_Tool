@@ -19,7 +19,7 @@ const getMarketInfo = async () => {
 };
 
 (async () => {
-  const PORT = process.emit.PORT || 80;
+  const PORT = process.env.PORT || 80;
   const app = express();
   app.use(express.static(path.join(__dirname, '../client/build')));
 
