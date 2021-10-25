@@ -6,7 +6,6 @@ import {
   Grid,
   Paper,
   Typography,
-  TextField,
   Box,
   Button,
 } from "@mui/material";
@@ -34,7 +33,7 @@ export function HomeView() {
   const getTokenByRank = useCallback(async () => {
     console.log("get by rank");
     let response = await axios.post("/token_by_rank", {
-      rank: rank - 1,
+      rank: rank,
     });
     if (response.data.success === false) return;
     console.log("rank response", response);
@@ -63,7 +62,7 @@ export function HomeView() {
   };
 
   const checkValidity = (str) => {
-    if (str == "") return true;
+    if (str === "") return true;
     if (isNaN(str)) return false;
     let n = parseInt(str);
     if (n > 0 && n <= 10000) return true;

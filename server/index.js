@@ -60,7 +60,7 @@ const getMarketInfo = async () => {
       id = parseInt(id);
       // get item
       try {
-        item = token_info[id];
+        item = token_info[id-1];
         //market data
         md = market_info[id];
         if (md) {
@@ -91,11 +91,11 @@ const getMarketInfo = async () => {
     let item = null;
     //check validity
     try {
-      rank = parseInt(rank);
+      rank = parseInt(rank) - 1;
       try {
         let id = rank_info[rank][0];
         console.log("token by rank", rank);
-        item = getTokenById(id);
+        item = getTokenById(id + 1);
       } catch {}
     } catch (error) {}
     ret.item = item;
