@@ -151,6 +151,7 @@ export function HomeView() {
           <img
             src="/img/symbol.png"
             width="100%"
+            minHeight="40vh"
             alt="Loading..."
             className="attr-back-img"
           />
@@ -161,6 +162,8 @@ export function HomeView() {
                 <AttIndicator
                   name={item.trait_type}
                   value={item.value}
+                  score = {item.score}
+                  percent={item.percent}
                   rarity="COMMON"
                   key={index}
                 />

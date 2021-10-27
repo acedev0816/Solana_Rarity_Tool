@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server/index.js",
+    "start_dev": "NODE_ENV=development node server/index.js",
     "build": "cd client && npm run build",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false && npm install --prefix client && npm run build --prefix client"
   },
@@ -14,6 +15,7 @@
   "license": "ISC",
   "dependencies": {
     "axios": "^0.23.0",
+    "dotenv": "^10.0.0",
     "express": "^4.17.1"
   }
 }

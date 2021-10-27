@@ -1,0 +1,2 @@
+global.tokenDb = {}
+global.marketDb = {}

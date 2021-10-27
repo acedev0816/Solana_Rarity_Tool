@@ -11,7 +11,7 @@
 .att-name
 {
     background: #1976d2;
-    width:40%;
+    width:35%;
     color: white;
     display:flex;
     justify-content: center;
@@ -23,19 +23,28 @@
 .att-value
 {
     background: #f7f7f7;
-    width:60%;
+    width:35%;
     display:flex;
     justify-content: center;
     align-items: center;
 }
-.att-rarity
+.att-score
 {
     background: green;
-    width:25%;
+    width:15%;
     color: white;
     display:flex;
     justify-content: center;
     align-items: center;
     /* border-radius: 0 10px 10px 0; */
-
+}
+.att-percent
+{
+    background: #cf6104;
+    width:15%;
+    color: white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    /* border-radius: 0 10px 10px 0; */
 }
